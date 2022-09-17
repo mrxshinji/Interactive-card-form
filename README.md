@@ -19,17 +19,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 - Desktop view
-![](./public/images/for_readme/desktop.png)
-![](./public/images/for_readme/desktop-active.png)
+![](./src/images/for_readme/desktop.png)
 
 - Mobile View
-![](./images/for_readme/mobile.png)
+![](./src/images/for_readme/mobile.png)
 
 
 ### Links
 
-- Solution URL: https://github.com/mrxshinji/FE-mentor-advice-generator
-- Live Site URL: https://mrxshinji.github.io/FE-mentor-advice-generator/
+- Solution URL: https://github.com/mrxshinji/Interactive-card-form
+- Live Site URL: https://mrxshinji.github.io/Interactive-card-form
 
 ## My process
 
