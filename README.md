@@ -52,7 +52,7 @@ div {
 }
 ```
 
-Alot people use padding-bottom with %% but that doesnt work for me since it is not full page and my width is base on view width. So instead, I use vw for padding-bottom as well to maintain its ratio
+A lot website recommend using padding-bottom with %% but that doesnt work for me since it is not full page and my width is base on view width. So instead, I use vw for padding-bottom as well to maintain its ratio.
 
 
 
