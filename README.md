@@ -38,15 +38,29 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- React
 
 ### What I learned
 
-//TODO
+- Aspect Ratio Div
+1 of the Nightmare I have when doing this is to set the aspect ratio properly with vw. Until I realized I was dumb and I could just use vw as height like below;
+
+```css
+div {
+        width: 45vw;
+        padding-bottom: 26vw;
+}
+```
+
+Alot people use padding-bottom with %% but that doesnt work for me since it is not full page and my width is base on view width. So instead, I use vw for padding-bottom as well to maintain its ratio
+
+
 
 ### Continued development
 
+- React Form
 
-//TODO
+I think my form is a mess with the error checking method I know. Gonna relearn this part and see any better way to do this.
 
 ### Useful resources
 
@@ -60,5 +74,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Acknowledgments
 
-[useEffect with axios to fetch api data](https://levelup.gitconnected.com/fetch-api-data-with-axios-and-display-it-in-a-react-app-with-hooks-3f9c8fa89e7b)
+[Aspect Ratio box](https://css-tricks.com/aspect-ratio-boxes/)
 
