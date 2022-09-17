@@ -1,0 +1,361 @@
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrayishViolet: hsl(270, 3%, 87%);
+    --DarkGrayishViolet: hsl(279, 6%, 55%);
+    --VeryDarkViolet: hsl(278, 68%, 11%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+/* -------------- CARD HEADER SECTION -------------- */
+.header {
+    width: 100vw;
+    max-width: 4;
+    height: 37vh;
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+}
+
+.card {
+    position: absolute;
+    width: 288px;
+    height: 189px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card-front {
+    top: 19vh;
+    left: 5%;
+    background-image: url(../images/bg-card-front.png);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.card-front #logo {
+    margin: 6.9% 0 18% 6.9%;
+}
+
+.card-front h1 {
+    margin: 0 0 5% 6.9%;
+    font-weight: 500;
+    color: var(--White);
+    letter-spacing: 3px;
+}
+
+.cardP {
+    margin: 0 0 0 6.9%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7rem;
+}
+
+.cardP p {
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.card-back {
+    top: 8vh;
+    margin-left: 18%;
+    background-image: url(../images/bg-card-back.png)
+}
+/* -------------- CARD HEADER SECTION -------------- */
+
+/* -------------- Input SECTION -------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardForm {
+    margin-left: 6.9%;
+    margin-right: 6.9%;
+}
+
+input {
+    border: 1px solid var(--LightGrayishViolet);
+    border-radius: 10px;
+    padding-left: 5%;
+}
+
+input::placeholder {
+    color: var(--DarkGrayishViolet);
+}
+
+.form-input, .form-thank-you {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2em;
+}
+
+label {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+form input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+#MM, #YY{
+    width: 40%;
+}
+
+#CVC {
+    width: 100%;
+}
+
+.form-thank-you {
+    display: none;
+}
+
+.btn {
+    background-color: var(--VeryDarkViolet);
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+/* -------------- Input SECTION -------------- */
+
+/* -------------- ERROR SECTION -------------- */
+.errorInput {
+    border: 1px solid red;
+    margin-bottom: 0%;
+}
+
+.errorDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%
+}
+
+.errorText {
+    color: red;
+    display: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.errorTextDate {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+}
+/* -------------- ERROR SECTION -------------- */
+
+/* -------------- Thank you SECTION -------------- */
+.form-thank-you {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 80vw;
+}
+
+.form-thank-you img {
+    margin-bottom: 1em;
+}
+
+.form-thank-you h1 {
+    font-size: 25px;
+    color: var(--VeryDarkViolet);
+    letter-spacing: 5px;
+}
+
+.form-thank-you p {
+    color: var(--DarkGrayishViolet);
+}
+
+.form-thank-you .btn {
+    height: 2.2em;
+}
+
+/* -------------- Thank you SECTION -------------- */
+
+/* -------------- For shorter phone -------------- */
+@media only screen and (min-height: 770px) {
+    .container {
+        gap: 0%;
+    }
+
+    .cardForm {
+        padding: 0;
+    }
+
+    form {
+        gap:.5em
+    }
+  }
+
+/* -------------- For iphone 12 + tablet  -------------- */
+@media only screen and (min-width: 500px) {
+    .header {
+        background-image: url(../images/bg-main-tablet.png);
+    }
+
+    main {
+        width: 100vw;
+
+    }
+
+    .card {
+        min-width: 327px;
+        width: 45vw;
+        padding-bottom: 26vw;
+    }
+
+    .cardForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-front {
+        top: 15vh;
+        left: 10vw;
+    }
+
+    .card-back {
+        margin-left: 0%;
+        left: 40vw;
+    }
+
+    .form-thank-you {
+        width: 30vw;
+        margin-left: 2vw;
+    }
+}
+
+
+/* -------------- For bigger screen -------------- */
+@media only screen and (min-width: 960px) {
+    .header {
+        width: 30vw;
+        height: 100vh;
+        background-image: url(../images/bg-main-desktop.png);
+    }
+
+    main {
+        width: auto;
+    }
+
+    .cardForm {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15vw;
+    }
+    
+
+    .form-input {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 31vw;
+        padding-bottom: 17vw;
+        background-size: cover;
+        border: 1px solid var(--LightGrayishViolet);
+        box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+    }
+    
+    .card-front {
+        top: 25vh;
+        left: 6vw;
+    }
+
+    .card-front #logo {
+        margin: 6.9% 0 15% 6.9%;
+    }
+    
+    .card-front h1 {
+        font-size: 2vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    
+    .cardP {
+        gap: 9rem;
+    }
+
+    .cardP p{
+        font-size: 1.2vw;
+    }
+
+    .card-back {
+        top: 52vh;
+        margin-left: 0%;
+        left: 10vw;
+    }
+}
+
+
+/* -------------- For very big screen -------------- */
+@media only screen and (min-width: 1100px) {
+    .cardForm {
+        margin-left: 25vw;
+    }
+
+    .card-front {
+        top: 19vh;
+        left: 11.5vw;
+    } 
+    
+    .card-back {
+        top: 52vh;
+        margin-left: 0%;
+        left: 18vw;
+    }
+
+}
+
+
